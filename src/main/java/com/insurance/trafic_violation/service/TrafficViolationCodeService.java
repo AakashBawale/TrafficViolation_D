@@ -16,7 +16,7 @@ public interface TrafficViolationCodeService {
 
 	public void deleteTrafficViolationCodeDetails(Integer id);
 
-	public List<TrafficViolationCode> findByTrafficViolationCode(String TrafficViolationCode);
+	public List<TrafficViolationCode> findByTrafficViolationCode(String trafficViolationCode);
 
-	public List<TrafficViolationCode> findByTrafficViolationCodeAndTrafficViolationPoint(String TrafficViolationCode,String TrafficViolationPoint);
+	public List<TrafficViolationCode> findByTrafficViolationCodeAndTrafficViolationPoint(String trafficViolationCode,String trafficViolationPoint);
 }

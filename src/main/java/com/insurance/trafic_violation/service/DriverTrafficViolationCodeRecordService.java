@@ -1,0 +1,22 @@
+package com.insurance.trafic_violation.service;
+
+import java.util.List;
+
+import com.insurance.trafic_violation.model.DriverTrafficViolationCodeRecord;
+
+public interface DriverTrafficViolationCodeRecordService {
+
+	public DriverTrafficViolationCodeRecord addDriverTrafficViolationCodeRecordDetails(DriverTrafficViolationCodeRecord driverTrafficViolationCodeRecord);
+
+	public DriverTrafficViolationCodeRecord updateDriverTrafficViolationCodeRecordDetails(DriverTrafficViolationCodeRecord driverTrafficViolationCodeRecord);
+
+	public DriverTrafficViolationCodeRecord fetchDriverTrafficViolationCodeRecordCodeDetails(Integer id);
+
+	public List<DriverTrafficViolationCodeRecord> fetchAllDriverTrafficViolationCodeRecordDetails();
+
+	public void deleteDriverTrafficViolationCodeRecordDetails(Integer id);
+
+	public List<DriverTrafficViolationCodeRecord> findByTrafficViolationCode(String trafficViolationCode);
+
+	public List<DriverTrafficViolationCodeRecord> findByTrafficViolationCodeAndStatust(String trafficViolationCode,String status);
+}
